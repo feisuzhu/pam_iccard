@@ -1,0 +1,6 @@
+parameters:
+
+reader=Reader_Name
+sms_record=-1
+storetoken ' store the token after authencate for 'noreading' use
+noreading ' only use previous stored token

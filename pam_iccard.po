@@ -1,0 +1,197 @@
+# pam_iccard 的中文翻译.
+# Copyright (C) 2011 Proton
+# This file is distributed under the same license as the pam_iccard package.
+# Proton <feisuzhu@163.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-02 22:06+0800\n"
+"PO-Revision-Date: 2011-03-02 17:47+0800\n"
+"Last-Translator: Proton <feisuzhu@163.com>\n"
+"Language-Team: Proton <feisuzhu@163.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+
+#: card.c:151
+msgid "** PLEASE SPECIFY CARD READER NAME IN CONFIG FILE OR PAM PARAMETERS **"
+msgstr "** 请在配置文件或者PAM模块参数中指定读卡器名称 **"
+
+#: card.c:153
+msgid "SCardEstablishContext failed"
+msgstr "SCardEstablishContext失败"
+
+#: card.c:164
+msgid "No smartcard is currently in reader."
+msgstr "读卡器中没有智能卡"
+
+#: card.c:165
+msgid "SCardConnect failed"
+msgstr "SCardConnect失败"
+
+#: card.c:167 card.c:168 card.c:171 card.c:174 card.c:209 card.c:245
+msgid "APDU failure"
+msgstr "智能卡未成功执行APDU"
+
+#: card.c:196 card.c:229
+msgid "Record on card too short to fit in auth token"
+msgstr "智能卡上的的记录长度过短，无法容纳认证标记"
+
+#: common.c:240
+msgid "This card is not yet initialized."
+msgstr "这张卡还没有初始化"
+
+#: common.c:254
+msgid "The PIN you provided is incorrect."
+msgstr "输入的PIN不正确"
+
+#: initcard.c:35
+#, c-format
+msgid ""
+"Tool for initialize card, for pam_iccard\n"
+"Usage: initcard\n"
+msgstr ""
+"pam_iccard用来初始化卡的工具\n"
+"用法： initcard\n"
+
+#: initcard.c:42
+#, c-format
+msgid "Error reading conf file: %s\n"
+msgstr "读取配置文件时发生错误: %s\n"
+
+#: initcard.c:47 registercard.c:110
+#, c-format
+msgid "Read card failed: %s\n"
+msgstr "读卡失败: %s\n"
+
+#: initcard.c:56
+#, c-format
+msgid ""
+"It seems that this card has already been initialized,\n"
+"reinitializing will cause auth failure if the card already registered.\n"
+msgstr ""
+"这张卡已经被初始化过了，\n"
+"如果这张卡已经注册，重新初始化将会导致认证失败。\n"
+
+#: initcard.c:65 registercard.c:94
+#, c-format
+msgid "Are you sure?(Y/N)"
+msgstr "你确定吗？(Y/N)"
+
+#: initcard.c:88
+#, c-format
+msgid "Enter your PIN: "
+msgstr "请输入PIN："
+
+#: initcard.c:101
+#, c-format
+msgid "Write card failed: %s\n"
+msgstr "写卡失败：%s\n"
+
+#: initcard.c:105
+#, c-format
+msgid "Card initialized.\n"
+msgstr "初始化完成。\n"
+
+#: pam_iccard.c:94
+msgid "pam_iccard doesn't support remote login."
+msgstr ""
+
+#: pam_iccard.c:99
+msgid "Can't get PAM_RHOST?!"
+msgstr ""
+
+#: pam_iccard.c:105
+msgid "'noreading' specified but no token was found."
+msgstr "指定了 'noreading' 选项但是没有找到认证标记。"
+
+#: pam_iccard.c:111
+#, c-format
+msgid "Read card failed: %s"
+msgstr "读卡失败：%s"
+
+#: pam_iccard.c:126 registercard.c:127
+#, c-format
+msgid "PIN: "
+msgstr "PIN: "
+
+#: pam_iccard.c:127
+msgid "Failed to obtain PIN"
+msgstr "无法获取PIN"
+
+#: pam_iccard.c:140
+msgid "Can't get username ?!"
+msgstr "无法获取用户名？！"
+
+#: pam_iccard.c:147
+msgid "Can't read userinfo!"
+msgstr "无法获取用户信息！"
+
+#: pam_iccard.c:159
+msgid "Unknown or unregistered user."
+msgstr "未知/未注册的用户。"
+
+#: pam_iccard.c:179
+msgid "pam_set_data failed?!"
+msgstr "pam_set_data 失败了?!"
+
+#: registercard.c:40
+#, c-format
+msgid "Won't work without effective root!\n"
+msgstr "Won't work without effective root!\n"
+
+#: registercard.c:46
+#, c-format
+msgid ""
+"Tool for register card, for pam_iccard\n"
+"Usage: registercard [username]\n"
+msgstr ""
+"pam_iccard用来注册卡的工具，\n"
+"用法： registercard [用户名]\n"
+
+#: registercard.c:63
+#, c-format
+msgid "Unknown user %s\n"
+msgstr "未知用户 %s\n"
+
+#: registercard.c:68
+#, c-format
+msgid "You are not authorized to register a card for %s\n"
+msgstr "你没有权力为 %s 注册！\n"
+
+#: registercard.c:75
+#, c-format
+msgid "Can't read userinfo!\n"
+msgstr "无法获取用户信息！\n"
+
+#: registercard.c:90
+#, c-format
+msgid ""
+"You(or the user you specified) has already registered a card, \n"
+"re-registering will cause old card unusable,\n"
+msgstr ""
+"你(或者你指定的用户)已经注册了一张卡，\n"
+"重新注册会导致旧卡无法使用，\n"
+
+#: registercard.c:151
+#, c-format
+msgid "Fxxk, can't write userinfo!\n"
+msgstr "我@#￥@，无法写入用户信息！\n"
+
+#: registercard.c:155
+#, c-format
+msgid "Registered.\n"
+msgstr "注册完成。\n"
+
+#: settings.c:52
+#, c-format
+msgid "parse file: can't open %s"
+msgstr "解析文件： 无法打开 %s"
+
+#~ msgid "Authenticate failure."
+#~ msgstr "认证失败。"
